@@ -1,5 +1,3 @@
-# NaturePath
-NaturePath - Sustainability Website
 
 # **Nature Path: Track Your Carbon Footprint and Earn Rewards**
 
@@ -10,13 +8,6 @@ Nature Path is a web application designed to help individuals track their carbon
 ## **Table of Contents**
 1. [Features](#features)
 2. [Tech Stack](#tech-stack)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Project Structure](#project-structure)
-6. [Screenshots](#screenshots)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Contact](#contact)
 
 ---
 
@@ -38,4 +29,10 @@ Nature Path is a web application designed to help individuals track their carbon
 
 ---
 
+## **Installation**
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/username/nature-path-website.git
+   cd nature-path-website
 
