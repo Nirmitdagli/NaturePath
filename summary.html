@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summary - Nature Path</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Your Nature Path Summary</h1>
+    <p>Total Carbon Footprint: {{ total_carbon }} kg CO2</p>
+    <p>Reward Points Earned: {{ points }}</p>
+    <a href="{{ url_for('track') }}">Track Another Activity</a>
+</body>
+</html>

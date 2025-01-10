@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track Activity - Nature Path</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Track Your Activity</h1>
+    <form method="post">
+        <label for="activity">Choose Activity:</label>
+        <select name="activity" id="activity" onchange="showOptions()">
+            <option value="commute">Commute</option>
+            <option value="electricity">Electricity Usage</option>
+            <option value="shopping">Shopping Choice</option>
+        </select>
+
+        <div id="commute-options">
+            <label for="mode">Commute Mode:</label>
+            <select name="mode">
+                <option value="car">Car</option>
+                <option value="bike">Bike</option>
+                <option value="public_transit">Public Transit</option>
+            </select>
+            <label for="distance">Distance (km):</label>
+            <input type="number" name="distance" step="0.1">
+        </div>
+
+        <div id="electricity-options" style="display:none;">
+            <label for="kwh">Electricity Usage (kWh):</label>
+            <input type="number" name="kwh" step="0.1">
+        </div>
+
+        <div id="shopping-options" style="display:none;">
+            <label>Did you choose an eco-friendly product?</label>
+            <input type="radio" name="eco_friendly" value="yes"> Yes
+            <input type="radio" name="eco_friendly" value="no"> No
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
